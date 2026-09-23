@@ -126,8 +126,8 @@
   }
 
   /* pricing */
-  .price-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:44px; }
-  @media (max-width:860px){ .price-grid{ grid-template-columns:1fr; max-width:420px; margin-left:auto; margin-right:auto; } }
+  .price-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:44px; max-width:680px; margin-left:auto; margin-right:auto; }
+  @media (max-width:640px){ .price-grid{ grid-template-columns:1fr; } }
   .price-card{
     border:1px solid var(--line); border-radius:16px; padding:28px 24px; background:var(--card);
     display:flex; flex-direction:column;
@@ -237,37 +237,27 @@
   <div class="wrap">
     <div class="section-head">
       <h2>Prezzi</h2>
-      <p>Un canone fisso in base a quanti appuntamenti gestisci al mese, senza sorprese.</p>
+      <p>Un'attivazione una tantum, poi scegli il piano più adatto alla tua attività.</p>
     </div>
     <div class="price-grid">
-      <div class="price-card">
+      <div class="price-card featured">
         <div class="price-tier">Base</div>
-        <div class="price-amount">25€ <span>/ mese</span></div>
-        <div class="price-scope">Fino a 200 promemoria al mese</div>
+        <div class="price-amount">Gratis</div>
+        <div class="price-scope">Promemoria WhatsApp automatici inclusi</div>
         <ul class="price-list">
           <li>Promemoria WhatsApp automatici</li>
           <li>Conferma o disdetta via risposta</li>
           <li>Avviso immediato in caso di disdetta</li>
         </ul>
       </div>
-      <div class="price-card featured">
-        <div class="price-tier">Standard</div>
-        <div class="price-amount">35€ <span>/ mese</span></div>
-        <div class="price-scope">Fino a 350 promemoria al mese</div>
+      <div class="price-card">
+        <div class="price-tier">Pro</div>
+        <div class="price-amount">20€ <span>/ mese</span></div>
+        <div class="price-scope">Da subito se vuoi</div>
         <ul class="price-list">
           <li>Tutto del piano Base</li>
           <li>Secondo promemoria poche ore prima</li>
           <li>Storico appuntamenti e disdette</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <div class="price-tier">Pro</div>
-        <div class="price-amount">45€ <span>/ mese</span></div>
-        <div class="price-scope">Oltre 350 promemoria al mese</div>
-        <ul class="price-list">
-          <li>Tutto del piano Standard</li>
-          <li>Più operatori o sedi collegate</li>
-          <li>Messaggi personalizzati per servizio</li>
         </ul>
       </div>
     </div>
